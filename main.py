@@ -26,6 +26,7 @@ def conv(inStr):
 #------------------------
 def date_conv(inStr):
 	return inStr
+	
 #------------------------
 def parser(pStr):
     p = re.compile(r'DHCPACK')
