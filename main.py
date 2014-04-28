@@ -25,6 +25,7 @@ def conv(inStr):
 	return tuple(int(okt) for okt in inStr[0].split('.'))
 #------------------------
 def date_conv(inStr):
+	print("ola")
 	return inStr
 	
 #------------------------
