@@ -15,6 +15,7 @@ def main():
 	# print list
 	ip.sort(key=sortIP)
 	for entry in ip:
+		entry[2] = date_conv(entry[2])
 		print(entry)
 #------------------------
 #sortIP. Return sorting key for list
@@ -25,9 +26,10 @@ def conv(inStr):
 	return tuple(int(okt) for okt in inStr[0].split('.'))
 #------------------------
 def date_conv(inStr):
-	print("ola")
-	return inStr
+	retStr = []
+	inStr = tuple(dt for dt in inStr.split(' '))
 	
+	return inStr
 #------------------------
 def parser(pStr):
     p = re.compile(r'DHCPACK')
