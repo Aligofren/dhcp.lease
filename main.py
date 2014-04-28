@@ -14,7 +14,8 @@ def main():
 		parser(line)
 	# print list
 	ip.sort(key=sortIP)
-	unique(ip)
+	for entry in ip:
+		print(entry)
 #------------------------
 #sortIP. Return sorting key for list
 def sortIP(inStr):
@@ -23,9 +24,7 @@ def sortIP(inStr):
 def conv(inStr):
 	return tuple(int(okt) for okt in inStr[0].split('.'))
 #------------------------
-def unique(inList):
-	for i in range(len(inList)):
-		print(inList[i][0])
+		
 #------------------------
 def parser(pStr):
     p = re.compile(r'DHCPACK')
