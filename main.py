@@ -24,7 +24,8 @@ def sortIP(inStr):
 def conv(inStr):
 	return tuple(int(okt) for okt in inStr[0].split('.'))
 #------------------------
-		
+def date_conv(inStr):
+	return inStr
 #------------------------
 def parser(pStr):
     p = re.compile(r'DHCPACK')
