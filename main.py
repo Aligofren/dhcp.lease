@@ -26,11 +26,10 @@ def conv(inStr):
 	return tuple(int(okt) for okt in inStr[0].split('.'))
 #------------------------
 def date_conv(inStr):
-	retStr = []
+	vocMth = {"Jan":"01","Feb":"02","Mar":"03","Apr":"04","May":"05","Jun":"06","Jul":"07","Aug":"08","Sep":"09","Okt":"10","Nov":"11","Dec":"12"}
 	inStr = tuple(dt for dt in inStr.split(' '))
-	
-	
-	return inStr
+	retStr = inStr[1]+"/"+vocMth[inStr[0]]+" "+inStr[2]
+	return retStr
 #------------------------
 def parser(pStr):
     p = re.compile(r'DHCPACK')
